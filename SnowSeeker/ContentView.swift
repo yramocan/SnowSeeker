@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  SnowSeeker
-//
-//  Created by Yuri Ramocan on 7/19/20.
-//
-
 import SwiftUI
 
 struct ContentView: View {

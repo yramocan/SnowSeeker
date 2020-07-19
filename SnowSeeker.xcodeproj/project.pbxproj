@@ -54,9 +54,7 @@
 			children = (
 				B04F803C24C50A4D00920D33 /* SnowSeekerApp.swift */,
 				B04F803E24C50A4D00920D33 /* ContentView.swift */,
-				B04F804024C50A4F00920D33 /* Assets.xcassets */,
-				B04F804524C50A4F00920D33 /* Info.plist */,
-				B04F804224C50A4F00920D33 /* Preview Content */,
+				B04F804B24C50A7600920D33 /* Resources */,
 			);
 			path = SnowSeeker;
 			sourceTree = "<group>";
@@ -67,6 +65,16 @@
 				B04F804324C50A4F00920D33 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B04F804B24C50A7600920D33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B04F804024C50A4F00920D33 /* Assets.xcassets */,
+				B04F804524C50A4F00920D33 /* Info.plist */,
+				B04F804224C50A4F00920D33 /* Preview Content */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
