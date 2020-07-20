@@ -4,9 +4,22 @@ struct ResortDetailsView: View {
     let resort: Resort
     
     var body: some View {
-        VStack {
-            Text("Size: \(size)")
-            Text("Price: \(price)")
+        Group {
+            HStack {
+                Image(systemName: "ruler.fill")
+                Text("Size: \(size)")
+            }
+            .badgeStyle(bgColor: .blue)
+            .layoutPriority(1)
+
+            Spacer().frame(height: 0)
+
+            HStack {
+                Image(systemName: "dollarsign.circle.fill")
+                Text("Price: \(price)")
+            }
+            .badgeStyle(bgColor: .blue)
+            .layoutPriority(1)
         }
     }
 }
@@ -30,6 +43,10 @@ extension ResortDetailsView {
 
 struct ResortDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        ResortDetailsView(resort: .example)
+        VStack(spacing: 8) {
+            ResortDetailsView(resort: .example)
+        }
+        .padding(20)
+        .previewLayout(.sizeThatFits)
     }
 }

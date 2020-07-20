@@ -1,6 +1,6 @@
 import Foundation
 
-struct Resort: Codable, Identifiable {
+struct Resort: Codable, Hashable, Identifiable {
     let id: String
     let name: String
     let country: String
@@ -11,7 +11,7 @@ struct Resort: Codable, Identifiable {
     let snowDepth: Int
     let elevation: Int
     let runs: Int
-    let facilities: [String]
+    let facilities: [Facility]
 
     static let allResorts: [Resort] = try! Bundle.main.decode("resorts.json")
     static let example = allResorts[0]
